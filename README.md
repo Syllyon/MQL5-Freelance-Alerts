@@ -41,4 +41,5 @@ Follow these steps to set up the project locally:
 Ensure the following variables are properly configured in .env:
 1. API_KEY
 2. BASE_URL
-3. NOTIFY_TELEGRAM_CHANNEL
+3. NOTIFY_TELEGRAM_BOT
+4. NOTIFY_TELEGRAM_CHANNEL
