@@ -1,17 +1,15 @@
-# 🚀 MQL5 Freelance Bot
-**Automate fast notifications for MQL5 Freelance job postings!**
+
 
 ## 🎯 Project Description
-This bot streamlines notifications for **MQL5 Freelance job postings**, allowing users to receive instant updates. 
-Created for developers looking to quickly engage with relevant freelance jobs (like myself), this tool eliminates delays, improves responsiveness, and boosts productivity.
+Main goal for this proyect is to see if I can get to be one of the first to ever apply for a freelance job from MQL5 website, as other developers tends to swarm these jobs a minute after posting it.
+This code sends telegram notifications for new real-time **MQL5 Freelance job postings**.
 
 ## 🌟 Features
-- **Real-Time Notifications**: Stay updated with live job postings.
-- **Flexible Configuration**: Tailor notifications to suit your preferences.
-- **Lightweight and Fast**: Designed for speed.
+- **Automated notifications**: Yep.
   
 ## 💻 Technologies Used
 - **Language**: Python
+- **Database**: SQLite
 
 ## 🛠️ Installation
 Follow these steps to set up the project locally:
@@ -24,22 +22,12 @@ Follow these steps to set up the project locally:
    pip install -r requirements.txt
 3. **Set Up Environment Variables: Create a .env file in the project's root directory and add the following**:
    ```text
-   API_KEY = your_api_key_here
-   BASE_URL = https://mql5.com/
-   NOTIFY_TELEGRAM_BOT = your_bot_key_here
-   NOTIFY_TELEGRAM_CHANNEL = your_channel_id_here
+   TELEGRAM_BOT_KEY = your_telegram_bot_token
+   TELEGRAM_CHANNEL_ID = your_telegram_channel_id
 4. Run the Application:
    ```bash
-   python app.py
+   python main.py
 
 ## 🧪 Usage
 1. Launch the application.
-2. Configure your filters for job postings (e.g., budget, category, urgency).
-3. Sit back and monitor real-time notifications!
-
-## 🌍 Environment Variables
-Ensure the following variables are properly configured in .env:
-1. API_KEY
-2. BASE_URL
-3. NOTIFY_TELEGRAM_BOT
-4. NOTIFY_TELEGRAM_CHANNEL
+2. Stop manually refreshing the website and get real-time notifications!
