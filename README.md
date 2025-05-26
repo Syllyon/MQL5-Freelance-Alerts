@@ -5,6 +5,7 @@ You'll need to setupthe  Telegram Bot using the Botfather and create a public or
 
 ## 🌟 Features
 - **Automated notifications**: Yep.
+- **Simplicity**: I'm just making stuff up at this point.
   
 ## 💻 Technologies Used
 - **Language**: Python
