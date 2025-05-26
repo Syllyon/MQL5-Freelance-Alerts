@@ -1,7 +1,6 @@
 import os
 import sqlite3
 import requests
-import traceback
 from bs4 import BeautifulSoup
 from datetime import datetime
 from apscheduler.schedulers.blocking import BlockingScheduler
