@@ -18,7 +18,7 @@ Follow these steps to set up the project locally:
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/Syllyon/MQL5-Freelance-Alerts.git
-   cd repository
+   cd MQL5-Freelance-Alerts
 2. **Install Dependencies**:
    ```bash
    pip install -r requirements.txt
