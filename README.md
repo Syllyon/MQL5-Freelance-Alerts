@@ -1,7 +1,7 @@
 ## 🎯 Project Description
 Main goal for this proyect is to see if I can get to be one of the first to ever apply for a freelance job from MQL5 website, as other developers tends to swarm these jobs a minute after posting it.
 This code sends telegram notifications for new real-time MQL5 Freelance job postings.
-You'll need to setupthe  Telegram Bot using the Botfather and create a public or private Telegram channel, then add the bot to it with permissions to send messages.
+You'll need to setup the Telegram Bot using the Botfather and create a public or private Telegram channel, then add the bot to it with permissions to send messages.
 
 ## 🌟 Features
 - **Automated notifications**: Yep.
