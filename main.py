@@ -72,7 +72,7 @@ def send_telegram_message(message):
     requests.post(url, data=payload)
 
 scheduler = BlockingScheduler()
-scheduler.add_job(scrape_jobs, "interval", seconds=60)
+scheduler.add_job(scrape_jobs, "interval", minutes=1)
 
 if __name__ == "__main__":    
     print("Starting application!")
