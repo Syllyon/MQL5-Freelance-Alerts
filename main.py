@@ -27,6 +27,8 @@ CREATE TABLE IF NOT EXISTS jobs (
 conn.commit()
 
 def scrape_jobs():
+    os.system('cls')
+    print(f"[%H:%M:%S.%f] Scrapping the web {datetime.now().strftime('%H:%M:%S.%f')[:-3]}")
     url = "https://www.mql5.com/en/job"
     headers = {"User-Agent": "Mozilla/5.0"}
     response = requests.get(url, headers=headers)
@@ -61,9 +63,11 @@ def scrape_jobs():
             break
 
     if new_jobs:
+        print("Preparing to send {len.new_jobs} notifications to Telegram!")
         for job_message in new_jobs:
             send_telegram_message(job_message)
-
+            
+    print(print(f"[%H:%M:%S.%f] Notifications successfully sent! {datetime.now().strftime('%H:%M:%S.%f')[:-3]}"))
     new_jobs.clear()
 
 def send_telegram_message(message):
@@ -75,6 +79,5 @@ scheduler = BlockingScheduler()
 scheduler.add_job(scrape_jobs, "interval", minutes=1)
 
 if __name__ == "__main__":    
-    print("Starting application!")
-    scrape_jobs()
+    print("Starting scheduler, sit back and relax!")
     scheduler.start()
