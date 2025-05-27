@@ -5,6 +5,7 @@ This code notifies Telegram of any new, real-time Job postings for MQL5 Freelanc
 ## 🌟 Features
 - **Automated notifications**: Yep.
 - **Simplicity**: I'm just making stuff up at this point.
+- **Filters**: Currently ommiting any "personal job" post since these are usually created for a designated developer.
   
 ## 💻 Technologies Used
 - **Language**: Python

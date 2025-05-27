@@ -13,20 +13,18 @@ TELEGRAM_CHANNEL_ID = os.getenv("TELEGRAM_CHANNEL_ID")
 DB_NAME = 'mql5-freelance.db'
 conn = sqlite3.connect(DB_NAME)
 cursor = conn.cursor()
-
-def setup_database():
-    cursor.execute("""
-    CREATE TABLE IF NOT EXISTS jobs (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        title TEXT,
-        description TEXT,
-        budget TEXT,
-        applications INTEGER,
-        date_posted TEXT,
-        UNIQUE(title, date_posted)
-    )
-    """)
-    conn.commit()
+cursor.execute("""
+CREATE TABLE IF NOT EXISTS jobs (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT,
+    description TEXT,
+    budget TEXT,
+    applications INTEGER,
+    date_posted TEXT,
+    UNIQUE(title, date_posted)
+)
+""")
+conn.commit()
 
 def scrape_jobs():
     url = "https://www.mql5.com/en/job"
@@ -42,6 +40,8 @@ def scrape_jobs():
 
     for job in job_items:
         title        = job.find("div", class_="job-item__title").get_text(strip=True)
+        if "(personal job)" in title: # Filter out locked jobs
+            continue
         href         = job.find("a").get('href')
         full_link    = f"https://www.mql5.com{href}"
         description  = job.find("div", class_="job-item__text").get_text(strip=True)
@@ -76,6 +76,5 @@ scheduler.add_job(scrape_jobs, "interval", minutes=1)
 
 if __name__ == "__main__":    
     print("Starting application!")
-    setup_database()
     scrape_jobs()
     scheduler.start()
