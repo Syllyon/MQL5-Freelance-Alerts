@@ -7,7 +7,7 @@ You can see the bot in action in my Telegram Channel: https://t.me/mql5freelance
 ## Results after 3 days of use: 
 I've applied for 11 jobs in 3 days using these notifications, and I was accepted for 2 of them, meaning I had an 18.18% chance of being chosen. Other factors include: 
 - Customers forgetting about their freelance job posting.
-- Customers prefers developers with more reviews and projects overall; my profile has ⭐⭐⭐⭐⭐ (5 starts, 1 project/feedback).
+- Customers prefers developers with more reviews and projects overall; my profile has ⭐⭐⭐⭐⭐ (5 stars, 1 project/feedback).
 
 ## 🌟 Features
 - **Automated notifications**: Yep.
