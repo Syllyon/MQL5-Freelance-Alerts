@@ -2,6 +2,13 @@
 This project's primary objective is to test if I can be the first MetaQuotes developers to apply for a freelance job from the MQL5 website, since other developers often flood these positions minutes after they are published.
 This code notifies Telegram of any new, real-time Job postings for MQL5 Freelance In order to accomplish this, you must first set up the Telegram Bot using Botfather, then make a public or private Telegram channel and grant the bot permission to send messages.
 
+You can see the bot in action in my Telegram Channel: https://t.me/mql5freelancejobs
+
+## Results after 3 days of use: 
+I've applied for 11 jobs in 3 days using these notifications, and I was accepted for 2 of them, meaning I had an 18.18% chance of being chosen. Other factors include: 
+- Customers forgetting about their freelance job posting.
+- Customers prefers developers with more reviews and projects overall; my profile has ⭐⭐⭐⭐⭐ (5 stars, 1 project/feedback).
+
 ## 🌟 Features
 - **Automated notifications**: Yep.
 - **Simplicity**: I'm just making stuff up at this point.
