@@ -1,3 +1,6 @@
 .env
 mql5-freelance.db
 windows_script.bat
+job_graphs/active_hours.svg
+job_graphs/active_weekdays.svg
+job_graphs/budget_by_hour.svg
