@@ -90,7 +90,7 @@ def fetch_and_process_data(conn):
     return processed_data
 
 # --- Graphing Functions ---
-def plot_active_weekdays(data, output_filename="active_weekdays.svg"):
+def plot_active_weekdays(data, output_filename="active_weekdays.png"):
     """ Generates a bar chart of job postings by weekday. """
     if not data:
         print("No data available to plot active weekdays.")
@@ -108,11 +108,11 @@ def plot_active_weekdays(data, output_filename="active_weekdays.svg"):
     plt.ylabel('Number of Job Postings')
     plt.xticks(rotation=45)
     plt.tight_layout()
-    plt.savefig(output_filename)
+    plt.save(output_filename)
     plt.close()
     print(f"Graph saved as {output_filename}")
 
-def plot_active_hours(data, output_filename="active_hours.svg"):
+def plot_active_hours(data, output_filename="active_hours.png"):
     """ Generates a bar chart of job postings by hour of the day. """
     if not data:
         print("No data available to plot active hours.")
@@ -135,7 +135,7 @@ def plot_active_hours(data, output_filename="active_hours.svg"):
     plt.close()
     print(f"Graph saved as {output_filename}")
 
-def plot_budget_by_hour(data, output_filename="budget_by_hour.svg"):
+def plot_budget_by_hour(data, output_filename="budget_by_hour.png"):
     """ Generates a bar chart of average budget by hour of the day. """
     if not data:
         print("No data available to plot budget by hour.")
